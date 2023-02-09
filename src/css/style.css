@@ -62,9 +62,35 @@ body {
     font-size: 18px;
     font-weight: bold;
     cursor: pointer;
+    border-color: #ffffff;
     transition: 0.4s all ease-in-out;
 }
 
 .container .trailer-button:hover {
     transform: scale(1.1);
+}
+
+.video-background {
+    background-color: #d5011d;
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.video-background .video {
+    height: 100vh;
+}
+
+.video-background::after {
+    content: "";
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.9) 50%, rgba(0,0,0,1) 100%);
 }
