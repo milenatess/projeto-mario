@@ -1,0 +1,48 @@
+@media (max-width: 1200px) {
+    body {
+        background-color: #b6071e;
+    }
+
+    .video-background {
+        display: none;
+    }
+
+    .container {
+        flex-wrap: wrap;
+        justify-content: center;
+        height: auto;
+        gap: 30px;
+    }
+
+    .container .mario {
+        max-width: 50%;
+
+    }
+
+    .container .informations {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .container .description {
+        color: #ffffff;
+        text-align: center;
+    }
+
+    .container .trailer-button {
+        background-color: #263238;
+    }
+}
+
+@media (max-width: 500px) {
+    .cabecalho {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .container .title-image {
+        max-width: 75%;
+    }
+}
